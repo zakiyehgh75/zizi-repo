@@ -12,7 +12,7 @@ def process_csv(file_path, column_name):
             print(f"❌ Column '{column_name}' does not exist in the file.")
             return
 
-        # Calculate basic statistic
+        # Calculate basic statistics
         mean_value = df[column_name].mean()
         median_value = df[column_name].median()
         max_value = df[column_name].max()
