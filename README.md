@@ -35,7 +35,7 @@ def process_csv(file_path, column_name):
         plt.xlabel(column_name)
         plt.ylabel("Frequency")
 
-        # Plot boxplot
+        # Plot 
         plt.subplot(1, 2, 2)
         plt.boxplot(df[column_name], vert=False)
         plt.title(f"Boxplot of {column_name}")
