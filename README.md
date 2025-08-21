@@ -5,7 +5,7 @@ import os
 
 def ask_input(prompt, default=""):
     user_input = input(f"{prompt} " + (f"[{default}] " if default else ""))
-    return user_input.strip() if user_input.strip() else defaul
+    return user_input.strip() if user_input.strip() else default
 
 def generate_readme(data):
     content = f"""# {data['project_name']}
