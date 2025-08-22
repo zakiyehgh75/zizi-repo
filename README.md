@@ -1,6 +1,6 @@
 # zizi-repo
 like a moon
-import datetim
+import datetime
 import os
 
 def ask_input(prompt, default=""):
