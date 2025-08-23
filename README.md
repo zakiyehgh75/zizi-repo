@@ -1,7 +1,7 @@
 # zizi-repo
 like a moon
 import datetime
-mport os
+import os
 
 def ask_input(prompt, default=""):
     user_input = input(f"{prompt} " + (f"[{default}] " if default else ""))
