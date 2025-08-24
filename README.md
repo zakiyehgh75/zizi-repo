@@ -3,7 +3,7 @@ like a moon
 import datetime
 import os
 
-def ask_input(prompt, default=""):
+ ask_input(prompt, default=""):
     user_input = input(f"{prompt} " + (f"[{default}] " if default else ""))
     return user_input.strip() if user_input.strip() else default
 
