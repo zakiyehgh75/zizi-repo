@@ -1,22 +1,38 @@
 # zizi-repo
 like a moon
-import datetime
-import os
+name: Run Python Script and Commit Changes
 
-def ask_input(prompt, default=""):
-    user_input = input(f"{prompt} " + (f"[{default}] " if default else ""))
-    return user_input.strip() if user_input.strip() else default
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
 
-def generate_readme(data):
-    content = f"""# {data['project_name']}
+jobs:
+  run:
+    runs-on: ubuntu-latest
 
-{data['description']}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-## Features
-{format_list(data['features'])}
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
 
-## Installation
-```bash
-git clone {data['repo_url']}
-cd {data['project_name']}
+      - name: Install dependencies
+        run: |
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+      - name: Run Python script
+        run: python your_script.py
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "Auto-update from GitHub Actions" || echo "No changes to commit"
+          git push
 
