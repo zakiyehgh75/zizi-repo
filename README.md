@@ -1,6 +1,6 @@
 # zizi-repo
 like a moon
-name: Run Python Script and Commit Change
+name: Run Python Script and Commit Changes
 
 on:
   push:
