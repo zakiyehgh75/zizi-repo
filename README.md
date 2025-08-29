@@ -21,7 +21,7 @@ jobs:
         with:
           python-version: "3.10"
 
-      - name: Install dependencies
+      - name: Install dependenci
         run: |
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
