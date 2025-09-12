@@ -4,7 +4,7 @@ import json
 from collections import defaultdict
 from datetime import datetime, timedelta
 
-# Mock blockchain data structur
+# Mock blockchain data structure
 class BlockchainData:
     def __init__(self):
         self.transactions = [
