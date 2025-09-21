@@ -46,7 +46,7 @@ def detect_irregularities(blockchain_data, thresholds):
         
         # 2. Abnormal address behavior detection
         daily_tx_count = defaultdict(int)
-        address_balance = 0
+        address_balance = 
         
         # Calculate address balance (in real implementation, use get_wallet_portfolio)
         for tx in txs:
