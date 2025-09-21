@@ -31,7 +31,7 @@ def detect_irregularities(blockchain_data, thresholds):
     
     irregularities = []
     
-    # Analyze each address
+    # Analyze each address 
     for address, txs in address_activity.items():
         # 1. Transaction volume spike detection
         for tx in txs:
@@ -46,7 +46,7 @@ def detect_irregularities(blockchain_data, thresholds):
         
         # 2. Abnormal address behavior detection
         daily_tx_count = defaultdict(int)
-        address_balance = 
+        address_balance = 0
         
         # Calculate address balance (in real implementation, use get_wallet_portfolio)
         for tx in txs:
