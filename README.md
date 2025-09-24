@@ -8,7 +8,7 @@ from datetime import datetime, timedelta
 class BlockchainData:
     def __init__(self):
         self.transactions = [
-            {"hash": "tx1", "": "addrA", "to": "addrB", "amount": 5000, "timestamp": "2025-08-29T14:00:00Z"},
+            {"hash": "tx1", "from": "addrA", "to": "addrB", "amount": 5000, "timestamp": "2025-08-29T14:00:00Z"},
             {"hash": "tx2", "from": "addrC", "to": "addrD", "amount": 15000, "timestamp": "2025-08-30T08:00:00Z"},
             {"hash": "tx3", "from": "addrA", "to": "addrE", "amount": 20000, "timestamp": "2025-08-30T10:00:00Z"},
             {"hash": "tx4", "from": "addrF", "to": "addrG", "amount": 500, "timestamp": "2025-08-29T12:00:00Z"},
