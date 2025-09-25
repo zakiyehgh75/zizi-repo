@@ -41,7 +41,7 @@ def detect_irregularities(blockchain_data, thresholds):
                     "tx_hash": tx["hash"],
                     "amount": tx["amount"],
                     "timestamp": tx["timestamp"],
-                    "address": addres
+                    "address": address
                 })
         
         # 2. Abnormal address behavior detection
