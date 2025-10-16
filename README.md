@@ -77,7 +77,7 @@ def detect_irregularities(blockchain_data, thresholds):
                     "amount": tx["amount"],
                     "timestamp": tx["timestamp"],
                     "address": address,
-                    "total_balance": address_balance
+                    "total_balance": address_
                 })
     
     return irregularities
