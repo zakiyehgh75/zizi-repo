@@ -6,7 +6,7 @@ from datetime import datetime, timedelta
 
 # Mock blockchain data structure
 class BlockchainData:
-     __init__(self):
+   def  __init__(self):
         self.transactions = [
             {"hash": "tx1", "from": "addrA", "to": "addrB", "amount": 5000, "timestamp": "2025-08-29T14:00:00Z"},
             {"hash": "tx2", "from": "addrC", "to": "addrD", "amount": 15000, "timestamp": "2025-08-30T08:00:00Z"},
