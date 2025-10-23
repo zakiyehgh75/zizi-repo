@@ -56,7 +56,7 @@ def detect_irregularities(blockchain_data, thresholds):
         # Count transactions per day
         for tx in txs:
             tx_date = datetime.fromisoformat(tx["timestamp"]).date()
-            daily_tx_count[tx_date] += 1
+            daily_tx_count[tx_date] += 
         
         # Flag addresses with excessive daily transactions
         for date, count in daily_tx_count.items():
