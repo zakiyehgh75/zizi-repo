@@ -87,7 +87,7 @@ def main():
     blockchain_data = BlockchainData()
     thresholds = AnomalyThresholds()
     
-    #  irregularities
+    # Detect irregularities
     results = detect_irregularities(blockchain_data, thresholds)
     
     # Print findings
