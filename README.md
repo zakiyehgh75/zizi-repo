@@ -44,7 +44,7 @@ def detect_irregularities(blockchain_data, thresholds):
                     "address": address
                 })
         
-        # 2.  address behavior detection
+        # 2. Abnormal address behavior detection
         daily_tx_count = defaultdict(int)
         address_balance = 0
         
