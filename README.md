@@ -32,7 +32,7 @@ def detect_irregularities(blockchain_data, thresholds):
     irregularities = []
     
     # Analyze each address
-    for address, txs in address_activity.items(list):
+    for address, txs in address_activity.(list):
         # 1. Transaction volume spike detection
         for tx in txs:
             if tx["amount"] > thresholds.VOLUME_SPIKE_THRESHOLD:
