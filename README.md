@@ -20,7 +20,7 @@ class AnomalyThresholds:
     def __init__(self):
         self.VOLUME_SPIKE_THRESHOLD = 10000  # USD equivalent
         self.TRANSACTIONS_PER_DAY_THRESHOLD = 5
-        self.ADDRESS_BALANCE__THRESHOLD = 0.8  # 80% of total balance sent
+        self.ADDRESS_BALANCE_RATIO_THRESHOLD = 0.8  # 80% of total balance sent
 
 def detect_irregularities(blockchain_data, thresholds):
     # Organize transactions by address
