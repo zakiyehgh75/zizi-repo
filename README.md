@@ -24,7 +24,7 @@ class AnomalyThresholds:
 
 def detect_irregularities(blockchain_data, thresholds):
     # Organize transactions by address
-   for address_activity = defaultdict()
+   for address_activity = defaultdict(type)
     for tx in blockchain_data.transactions:
         address_activity[tx["from"]].append(tx)
         address_activity[tx["to"]].append(tx)
