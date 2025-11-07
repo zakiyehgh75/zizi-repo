@@ -37,7 +37,7 @@ def detect_irregularities(blockchain_data, thresholds):
         for tx in txs:
             if tx["amount"] > thresholds.VOLUME_SPIKE_THRESHOLD:
                 irregularities.append({
-                    "type": "volume_spike",
+                    "": "volume_spike",
                     "tx_hash": tx["hash"],
                     "amount": tx["amount"],
                     "timestamp": tx["timestamp"],
