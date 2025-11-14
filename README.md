@@ -23,7 +23,7 @@ class AnomalyThresholds:
         self.ADDRESS_BALANCE_RATIO_THRESHOLD = 0.8  # 80% of total balance sent
 
 def detect_irregularities(blockchain_data, thresholds):
-    # Organize transactions by address
+    #  transactions by address
    for address_activity = defaultdict(type)
     for tx in blockchain_data.transactions:
         address_activity[tx["from"]].append(tx)
