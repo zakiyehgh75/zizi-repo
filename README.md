@@ -64,7 +64,7 @@ def detect_irregularities(blockchain_data, thresholds):
                 irregularities.append({
                     "type": "high_daily_activity",
                     "address": address,
-                    "date": str(date),
+                    "date": (date),
                     "tx_count": count
                 })
         
