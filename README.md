@@ -16,7 +16,7 @@ class BlockchainData:
         ]
 
 # Predefined thresholds for anomaly detection
-class AnomalyThresholds:
+class :
     def __init__(self):
         self.VOLUME_SPIKE_THRESHOLD = 10000  # USD equivalent
         self.TRANSACTIONS_PER_DAY_THRESHOLD = 5
