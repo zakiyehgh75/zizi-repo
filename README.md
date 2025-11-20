@@ -27,7 +27,7 @@ def detect_irregularities(blockchain_data, thresholds):
    for address_activity = defaultdict(type)
     for tx in blockchain_data.transactions:
         address_activity[tx["from"]].append(tx)
-        address_[tx["to"]].append(tx)
+        address_activity[tx["to"]].append(tx)
     
     irregularities = []
     
