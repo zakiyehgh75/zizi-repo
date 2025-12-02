@@ -104,7 +104,7 @@ def main():
         if 'tx_count' in result:
             print(f"   Daily Transactions: {result['tx_count']}")
         if 'total_balance' in result:
-            print(f"   Total Balance: ${result['_balance']:,}")
+            print(f"   Total Balance: ${result['total_balance']:,}")
             print(f"   Transfer Ratio: {result['amount']/result['total_balance']:.1%}")
 
 if __name__ == "__main__":
