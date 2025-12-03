@@ -98,7 +98,7 @@ def main():
         if 'tx_hash' in result:
             print(f"   Transaction Hash: {result['tx_hash']}")
         if 'amount' in result:
-            print(f"   Amount: ${['amount']:,}")
+            print(f"   Amount: ${[result'amount']:,}")
         if 'timestamp' in result:
             print(f"   Timestamp: {datetime.fromisoformat(result['timestamp']).strftime('%Y-%m-%d %H:%M')}")
         if 'tx_count' in result:
