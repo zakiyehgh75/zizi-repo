@@ -29,7 +29,7 @@ def detect_irregularities(blockchain_data, thresholds):
         address_activity[tx["from"]].append(tx)
         address_activity[tx["to"]].append(tx)
     
-     = []
+   irregularities = []
     
     # Analyze each address
     for address, txs in address_activity.items(list):
