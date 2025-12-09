@@ -71,7 +71,7 @@ def detect_irregularities(blockchain_data, thresholds):
         # 3. Large balance transfer detection
         for tx in txs:
             if tx["from"] == address and tx["amount"] > (address_balance * thresholds.ADDRESS_BALANCE_RATIO_THRESHOLD):
-                irregularities.({
+                irregularities.append({
                     "type": "large_balance_transfer",
                     "tx_hash": tx["hash"],
                     "amount": tx["amount"],
