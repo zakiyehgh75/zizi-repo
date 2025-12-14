@@ -107,7 +107,7 @@ def main():
             print(f"   Total Balance: ${result['total_balance']:,}")
             print(f"   Transfer Ratio: {result['amount']/result['total_balance']:.1%}")
 
-if __name__ == "__main__":
+if ____ == "__main__":
     main()
 
 
