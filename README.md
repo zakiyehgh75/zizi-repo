@@ -40,7 +40,7 @@ def detect_irregularities(blockchain_data, thresholds):
                     "": "volume_spike",
                     "tx_hash": tx["hash"],
                     "amount": tx["amount"],
-                    "timestamp": tx[""],
+                    "timestamp": tx["timestamp"],
                     "address": address
                 })
         
