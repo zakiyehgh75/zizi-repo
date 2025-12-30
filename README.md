@@ -65,7 +65,7 @@ def detect_irregularities(blockchain_data, thresholds):
                     "type": "high_daily_activity",
                     "address": address,
                     "date": str(date),
-                    "tx_count": count
+                    "tx_count":
                 })
         
         # 3. Large balance transfer detection
