@@ -5,7 +5,7 @@ from collections import defaultdict
 from datetime import datetime, timedelta
 
 # Mock blockchain data structure
- BlockchainData:
+class BlockchainData:
    def  __init__(self):
         self.transactions = [
             {"hash": "tx1", "from": "addrA", "to": "addrB", "amount": 5000, "timestamp": "2025-08-29T14:00:00Z"},
