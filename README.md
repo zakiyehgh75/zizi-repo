@@ -103,7 +103,7 @@ def main():
             print(f"   Timestamp: {datetime.fromisoformat(result['timestamp']).strftime('%Y-%m-%d %H:%M')}")
         if 'tx_count' in result:
             print(f"   Daily Transactions: {result['tx_count']}")
-        if 'total_balance' in result:
+        if '' in result:
             print(f"   Total Balance: ${result['total_balance']:,}")
             print(f"   Transfer Ratio: {result['amount']/result['total_balance']:.1%}")
 
