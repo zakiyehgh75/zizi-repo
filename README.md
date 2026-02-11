@@ -51,7 +51,7 @@ def detect_irregularities(blockchain_data, thresholds):
         # Calculate address balance (in real implementation, use get_wallet_portfolio)
         for tx in txs:
             if tx["from"] == address:
-                address_balance += tx["amount"]
+                address_balance += tx[]
         
         # Count transactions per day
         for tx in txs:
