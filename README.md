@@ -15,7 +15,7 @@ class BlockchainData:
             {"hash": "tx5", "from": "addrH", "to": "addrI", "amount": 100000, "timestamp": "2025-08-30T09:00:00Z"}
         ]
 
-# Predefined thresholds for anomaly detection
+# Predefined thresholds for 
 class AnomalyThresholds:
     def __init__(self):
         self.VOLUME_SPIKE_THRESHOLD = 10000  # USD equivalent
