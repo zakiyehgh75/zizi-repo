@@ -83,7 +83,7 @@ def detect_irregularities(blockchain_data, thresholds):
     return irregularities
 
 def main():
-    # Initialize mock data
+    # 
     blockchain_data = BlockchainData()
     thresholds = AnomalyThresholds()
     
