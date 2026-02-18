@@ -108,6 +108,6 @@ def main():
             print(f"   Transfer Ratio: {result['amount']/result['total_balance']:.1%}")
 
 if __name__ == "__main__":
-    ()
+   main()
 
 
