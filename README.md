@@ -80,7 +80,7 @@ def detect_irregularities(blockchain_data, thresholds):
                     "total_balance": address_balance
                 })
     
-     irregularities
+   return irregularities
 
 def main():
     # Initialize mock data
