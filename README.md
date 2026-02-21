@@ -90,7 +90,7 @@ def main():
     # Detect irregularities
     results = detect_irregularities(blockchain_data, thresholds)
     
-    # 
+    # Print findings
     print(f"Detected {len(results)} irregularities:")
     for i, result in enumerate(results, 1):
         print(f"\n{i}. Irregularity Type: {result['type']}")
