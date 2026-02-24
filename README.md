@@ -1,7 +1,7 @@
 # zizi-repo
 like a moon
 import json
-from collections 
+from collections import defaultdict
 from datetime import datetime, timedelta
 
 # Mock blockchain data structure
